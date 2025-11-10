@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Noto sans";
+  box-sizing: border-box;
+  transition: background 0.4s, color 0.4s;
+}
+
+body {
+  background: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%) fixed;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  margin: 15px auto;
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(200, 60%, 99%);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 1px 5px black;
+}
+
+.modeBtn:hover {
+  background: hsl(217, 61%, 90%);
+  box-shadow: 0 1px 5px black;
+  transform: scale(1.05);
+}
+
+.modeBtn {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  background: hsl(0, 0%, 93%);
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainHeading {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px auto;
+  height: 50px;
+  font-size: 2rem;
+  font-weight: bolder;
+
+  padding: 5px;
+}
+
+.filterBtn > button {
+  cursor: pointer;
+}
+.allExtension {
+  background: white;
+  border: 2px solid hsl(3, 71%, 56%);
+  padding: 5px 20px;
+  border-radius: 40px;
+}
+
+.allExtension:hover {
+  background: hsl(3, 77%, 44%);
+}
+
+.activeExtension {
+  background: white;
+  border: 2px solid hsl(3, 71%, 56%);
+  padding: 5px 20px;
+  border-radius: 40px;
+}
+
+.activeExtension:hover {
+  background: hsl(3, 77%, 44%);
+}
+
+.inactiveExtansion {
+  background: white;
+  border: 2px solid hsl(3, 71%, 56%);
+  padding: 5px 20px;
+  border-radius: 40px;
+}
+.inactiveExtansion:hover {
+  background: hsl(3, 77%, 44%);
+}
+
+.filterBtn > button:hover {
+  border: 2px solid hsl(3, 86%, 64%);
+}
+
+.card:hover {
+  background: hsl(0, 0%, 93%);
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  cursor: pointer;
+  width: 25vw;
+  border: 1px solid;
+  background: hsl(200, 60%, 99%);
+  border-radius: 10px;
+  padding: 15px;
+}
+.cardImg > img {
+  height: 50px;
+  width: 50px;
+  margin-right: 10px;
+}
+.cardSubtitle {
+  color: hsl(226, 11%, 37%);
+}
+.cardHeading {
+  display: flex;
+}
+
+.cardBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 30px;
+  margin-top: 50px;
+}
+
+.Removebtn {
+  background: white;
+  border: 1px solid;
+  padding: 5px 25px;
+  font-size: 16px;
+  border-radius: 40px;
+  font-weight: 500;
+}
+
+.container {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 15px;
+}
+
+.selected-filter {
+  background: hsl(3, 77%, 44%);
+  color: white;
+}
+
+
+.footer {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.footer > a {
+  text-decoration: black;
+}
+
+/* 
+Dark mode*/
+
+.dark-mode {
+  background: linear-gradient(180deg, #040918 0%, #091540 100%) fixed;
+  color: white;
+}
+
+.dark-mode .card {
+  background: hsl(226, 25%, 17%);
+}
+
+.dark-mode .modeBtn:hover {
+  box-shadow: 0 1px 5px rgb(0, 0, 0);
+  background: hsl(226, 25%, 17%);
+  transform: scale(1.05);
+}
+.dark-mode .modeBtn {
+  background: hsl(226, 25%, 17%);
+}
+
+.dark-mode .cardSubtitle {
+  color: hsl(0, 0%, 78%);
+}
+
+.dark-mode .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .allExtension {
+  color: white;
+  background: hsl(225, 23%, 24%);
+}
+.dark-mode .inactiveExtansion {
+  color: white;
+
+  background: hsl(225, 23%, 24%);
+}
+.dark-mode .activeExtension {
+  color: white;
+
+  background: hsl(225, 23%, 24%);
+}
+
+.dark-mode .Removebtn {
+  color: white;
+  background: hsl(226, 25%, 17%);
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.dark-mode .Removebtn:hover {
+  background: hsl(225, 23%, 24%);
+}
+
+
+/* Hide default checkbox */
+.activebtn {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid hsl(3, 71%, 56%);
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* When checked */
+.activebtn:checked {
+  background-color: hsl(3, 77%, 44%);
+  border-color: hsl(3, 77%, 44%);
+}
+
+/* Add a tick mark when checked */
+.activebtn:checked::after {
+  content: "✔";
+  color: white;
+  position: absolute;
+  top: -1px;
+  left: 3px;
+  font-size: 14px;
+}
+.cardBtn label {
+  font-size: 14px;
+  color: hsl(226, 11%, 37%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.dark-mode .cardBtn label {
+  color: hsl(0, 0%, 85%);
+}
+
+.dark-mode .activebtn {
+  border-color: hsl(0, 0%, 80%);
+}
+
+.dark-mode .activebtn:checked {
+  background-color: hsl(3, 77%, 44%);
+  border-color: hsl(3, 77%, 44%);
+}
+
+.dark-mode .activebtn:checked::after {
+  color: #fff;
+}
